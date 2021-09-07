@@ -1,34 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Brút Boutique Beer
+This project is a beer e-commerce made with NextJS and ChakraUI.  
 
-## Getting Started
+It also uses Supabase as Database service, NextJS API Routes for handling requests and SWR for client-side fetching and caching.  
 
-First, run the development server:
+Both Home page and Shop page use ISG so they can be revalidated and have fresh data, but also still serve cached static data during a prudential amount of time.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+In the /utils folder still persists, but commmented out, the mockup data and a basic filtering function. This was made in early development and was left there in case you want to setup the project without having to use Supabase to test it out (although some functionalities would be lost). Feel free to delete them if you clone this repository.
+## Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+https://brut-beerstore.vercel.app
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Preview
+### Home
+![img](https://i.imgur.com/X8lSnqa.png?1)
+![img](https://i.imgur.com/mGdKBE6.png?2)
+### Shop
+![img](https://i.imgur.com/XHgiXYk.png)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
