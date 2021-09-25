@@ -56,7 +56,7 @@ export default function ShoppingCart({list, disclosure:{isOpen,onClose}, actions
                         </DrawerBody>
 
                         <DrawerFooter>
-                        {(list.length === 0)?
+                        {!(list.length === 0)?
                             <Stack flex={1} spacing={1}>
                                 <Stack direction="row" fontSize="lg" align="center" justify="center">
                                     <Text  fontFamily={"Caveat"} fontSize="2xl"fontWeight={"bold"}>Order:</Text>
